@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mocha</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mocha.css" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+  <div id="calculator">
+    <div id="screen-container">
+      <div id="screen"></div>
+    </div>
+    <div id="buttons-container">
+      <div class="buttons">
+        <span class="operator" id="clear">C</span>
+        <span class="operator" id='divide'>÷</span>
+        <span class="operator" id='multiply'>x</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span class="operator" id="subtract">-</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span class="operator">+</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span class="operator" id="equals">=</span>
+        <div class="l-row">
+          <span id="zero">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mocha"></div>
+  <script src="mocha.js"></script>
+  <script src="chai.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script src="../js/index.js"></script>
+  <script src="tests.js"></script>
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>
